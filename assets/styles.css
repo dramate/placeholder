@@ -1,0 +1,43 @@
+html {
+	background-color: #f7ecd8;
+	transition: 0.2s ease;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+img {
+	max-width: 90vw;
+}
+
+img#light {
+	display: none;
+}
+
+h1 {
+	color: #50484b;
+	font-family: "Libre Baskerville", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #50484b;
+	}
+
+	img#dark {
+		display: none;
+	}
+
+	img#light {
+		display: block;
+	}
+
+	h1 {
+		color: #f7ecd8;
+	}
+}
